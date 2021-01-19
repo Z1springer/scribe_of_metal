@@ -8,7 +8,7 @@ const fs = require("fs");
 // ====================================================
 const app = express();
 PORT = 8080;
-app.use(express.static("public"));
+app.use(express.static("public")); //connecting to the public folder for styling and javascript
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -23,7 +23,7 @@ app.get("/notes", (req, res) => {
   console.log(__dirname);
   res.sendFile(path.join(__dirname + "/public/notes.html"));
 });
-
+// GET API route, also adds ID for later use
 app.get("/api/notes", (req, res) => {
   fs.readFile("./db.json", function (err, data) {
     if (err) throw err;
@@ -38,7 +38,7 @@ app.get("/api/notes", (req, res) => {
     res.json(dataId);
   });
 });
-
+// POST API route
 app.post("/api/notes", (req, res) => {
   fs.readFile("./db.json", function (err, data) {
     if (err) throw err;
@@ -50,7 +50,7 @@ app.post("/api/notes", (req, res) => {
     res.json(newNote);
   });
 });
-
+// DELETE API route
 app.delete("/api/notes/:id", (req, res) => {
   fs.readFile("./db.json", function (err, data) {
     if (err) throw err;

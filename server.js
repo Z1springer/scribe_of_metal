@@ -7,7 +7,7 @@ const fs = require("fs");
 // Express
 // ====================================================
 const app = express();
-PORT = 8080;
+PORT = process.env.PORT || 8080;
 app.use(express.static("public")); //connecting to the public folder for styling and javascript
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

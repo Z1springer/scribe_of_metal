@@ -1,9 +1,5 @@
 # scribe_of_metal
 
-## Description
-
-An application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
-
 ## User Story
 
 AS A user, I want to be able to write and save notes
@@ -16,14 +12,16 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
 
-## Deploying the App
+## Description
 
-You will not be able to deploy your server side code on GitHub pages. This app should be deployed on Heroku. Carefully follow the [Heroku Guide](../04-Important/HerokuGuide.md) for getting your app deployed on Heroku.
+An application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
-## Submission on BCS
+## Links
 
-You are required to submit the following:
+GitHub: _(https://github.com/Z1springer/scribe_of_metal)_
+Heroku: _(https://sleepy-gorge-51893.herokuapp.com/)_
 
-- The URL of the deployed application. This should be the link to the url provided by Heroku. Be sure not to submit a link to the Heroku dashboard.
+## Screenshots
 
-- The URL of the GitHub repository
+![image](https://user-images.githubusercontent.com/74688904/105138090-4182dc00-5aa9-11eb-8e1a-9f095e38556a.png)
+![image](https://user-images.githubusercontent.com/74688904/105138139-55c6d900-5aa9-11eb-9d0e-ad69ec5c5710.png)
